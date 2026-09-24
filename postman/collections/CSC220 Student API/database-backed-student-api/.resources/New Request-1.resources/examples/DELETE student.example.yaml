@@ -1,0 +1,16 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/students/6ab47e8aa11a87a61beb5b38
+  method: DELETE
+response:
+  statusCode: 204
+  statusText: No Content
+  headers:
+    x-powered-by: Express
+    date: Thu, 24 Sep 2026 01:42:09 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: text
+    content: ""
+order: 4484107365047668

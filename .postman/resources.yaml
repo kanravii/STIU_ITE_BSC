@@ -1,0 +1,8 @@
+workspace:
+  id: afe4be8c-616b-498b-8c1a-60ef67718210
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/CSC220 Student API: 58389118-76649675-2be4-49b2-bb66-4f2f80e70159

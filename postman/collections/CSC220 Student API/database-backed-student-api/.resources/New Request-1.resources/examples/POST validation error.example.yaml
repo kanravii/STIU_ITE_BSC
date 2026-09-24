@@ -1,0 +1,30 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/students
+  method: POST
+  body:
+    type: json
+    content: |+
+      {
+        "score": 95
+      }
+
+
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    x-powered-by: Express
+    content-type: application/json; charset=utf-8
+    content-length: "103"
+    etag: W/"67-IqzuHgOTjATjRRTJFfk2mqaKSMY"
+    date: Thu, 24 Sep 2026 01:37:01 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "error": "Student validation failed: major: Path `major` is required., name: Path `name` is required."
+      }
+order: 4447314870841324

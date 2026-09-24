@@ -1,0 +1,37 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/students/6ab47e8aa11a87a61beb5b38
+  method: PATCH
+  body:
+    type: json
+    content: |+
+      {
+        "score": 95
+      }
+
+
+
+
+
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    x-powered-by: Express
+    content-type: application/json; charset=utf-8
+    content-length: "80"
+    etag: W/"50-/+r6DUt4d9mBe9mUpjaoBrwnJd8"
+    date: Thu, 24 Sep 2026 01:38:22 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "_id": "6ab47e8aa11a87a61beb5b38",
+        "name": "Nora",
+        "major": "CS",
+        "score": 95,
+        "__v": 0
+      }
+order: 4485858780747484

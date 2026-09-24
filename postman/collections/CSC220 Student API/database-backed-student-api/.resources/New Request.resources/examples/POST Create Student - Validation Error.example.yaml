@@ -1,0 +1,30 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/students
+  method: POST
+  body:
+    type: json
+    content: |+
+      {
+        "major": "IT",
+        "score": 80
+      }
+
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    x-powered-by: Express
+    content-type: application/json; charset=utf-8
+    content-length: "69"
+    etag: W/"45-qY7B+f1tyawBAn6a041UHBu69hI"
+    date: Mon, 21 Sep 2026 09:52:32 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "error": "Student validation failed: name: Path `name` is required."
+      }
+order: 3699973518537041

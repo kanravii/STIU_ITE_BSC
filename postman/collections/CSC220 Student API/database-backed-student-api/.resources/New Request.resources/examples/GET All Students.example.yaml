@@ -1,0 +1,28 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/students
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    x-powered-by: Express
+    content-type: application/json; charset=utf-8
+    content-length: "81"
+    etag: W/"51-8RVQg6tBnevwN5M5c7HCjmfCBxM"
+    date: Mon, 21 Sep 2026 09:42:36 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "_id": "6aadd6451484bd9c381623e7",
+          "name": "Mek",
+          "major": "IT",
+          "score": 80,
+          "__v": 0
+        }
+      ]
+order: 1789983833281

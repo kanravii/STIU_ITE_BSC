@@ -1,0 +1,30 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/students/66f1a2b3c4d5e6f789012345
+  method: GET
+  body:
+    type: json
+    content: |+
+      {
+        "major": "IT",
+        "score": 80
+      }
+
+response:
+  statusCode: 404
+  statusText: Not Found
+  headers:
+    x-powered-by: Express
+    content-type: application/json; charset=utf-8
+    content-length: "29"
+    etag: W/"1d-/w9leX+CSVwScG3mclc8pAqpxGg"
+    date: Mon, 21 Sep 2026 09:54:14 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "error": "Student not found"
+      }
+order: 3919804078864231

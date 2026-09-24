@@ -1,0 +1,34 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/students/6ab47e8aa11a87a61beb5b38
+  method: PATCH
+  body:
+    type: json
+    content: |+
+      {
+        "score": 5000
+      }
+
+
+
+
+
+
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    x-powered-by: Express
+    content-type: application/json; charset=utf-8
+    content-length: "99"
+    etag: W/"63-2STYEHiqnNg9q0DT69IR+eL3NUw"
+    date: Thu, 24 Sep 2026 01:41:14 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "error": "Validation failed: score: Path `score` (5000) is more than maximum allowed value (100)."
+      }
+order: 4481613764221617
